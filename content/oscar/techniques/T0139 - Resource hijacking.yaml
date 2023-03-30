@@ -1,0 +1,36 @@
+id: T0139
+type: Technique
+
+tactic: Impact
+
+realm: 
+  - CI/CDPosture
+  - CloudSecurity
+  - ContainerSecurity
+
+summary: Resource hijacking
+
+description: |
+  Resource hijacking is a significant threat to cloud and container security. 
+  It refers to the unauthorized use of computing resources, such as CPU power, memory, and bandwidth, by an attacker who has gained control over a system or network.
+  In cloud environments, attackers can compromise cloud-based systems to perform resource-intensive tasks like cryptocurrency mining, DDoS attacks, and other malicious activities. 
+  This can significantly impact system availability and negatively affect hosted services. 
+  Attackers can also leverage cloud-based resources to launch attacks on other targets, amplifying the impact of their actions.
+  Similarly, in containerized environments, attackers can use compromised containers to launch resource-hijacking attacks. 
+  By deploying multiple containers within a cluster or environment, attackers can scale their mining activities and launch coordinated DDoS attacks.
+
+mitigations: 
+  - M1550
+  - M1720
+
+detections: 
+  - D1510
+
+references: 
+  - https://socprime.com/blog/purpleurchin-campaign-detection-a-new-crypto-mining-operation-massively-abuses-github-actions-and-other-popular-free-ci-cd-service-accounts/
+
+metadata: 
+    version: 0.1
+    state: draft
+
+  
